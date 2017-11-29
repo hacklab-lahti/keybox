@@ -21,8 +21,6 @@
 DEVICE = stm32f103c8t6
 BINARY = keybox
 
-OPENCM3_DIR = ../libopencm3
-
 LIBNAME		= opencm3_stm32f1
 DEFS		+= -DSTM32F1
 
