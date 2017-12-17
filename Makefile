@@ -20,6 +20,7 @@
 
 DEVICE = stm32f103c8t6
 BINARY = keybox
+OBJS = debug.o
 
 LIBNAME		= opencm3_stm32f1
 DEFS		+= -DSTM32F1

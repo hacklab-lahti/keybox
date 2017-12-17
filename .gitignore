@@ -3,3 +3,4 @@ generated.*.ld
 *.o
 *.map
 *.elf
+.vscode
