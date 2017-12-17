@@ -172,7 +172,7 @@ static void timer_setup(void) {
 static void systick_setup(void) {
     // Tick every 1ms
 
-	systick_set_clocksource(STK_CSR_CLKSOURCE_AHB);
+    systick_set_clocksource(STK_CSR_CLKSOURCE_AHB);
     systick_set_reload(24000 - 1);
     systick_interrupt_enable();
     systick_counter_enable();

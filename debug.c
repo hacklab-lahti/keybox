@@ -38,13 +38,13 @@ void debug_setup(void) {
         PASTE(PASTE(GPIO_USART, DEBUG_UART_PIN), _TX));
 
     usart_set_baudrate(USART_DEBUG, 115200);
-	usart_set_databits(USART_DEBUG, 8);
-	usart_set_stopbits(USART_DEBUG, USART_STOPBITS_1);
-	usart_set_parity(USART_DEBUG, USART_PARITY_NONE);
-	usart_set_flow_control(USART_DEBUG, USART_FLOWCONTROL_NONE);
-	usart_set_mode(USART_DEBUG, USART_MODE_TX);
+    usart_set_databits(USART_DEBUG, 8);
+    usart_set_stopbits(USART_DEBUG, USART_STOPBITS_1);
+    usart_set_parity(USART_DEBUG, USART_PARITY_NONE);
+    usart_set_flow_control(USART_DEBUG, USART_FLOWCONTROL_NONE);
+    usart_set_mode(USART_DEBUG, USART_MODE_TX);
 
-	usart_enable(USART_DEBUG);
+    usart_enable(USART_DEBUG);
 }
 
 int _write(int file, char *ptr, int len);
